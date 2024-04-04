@@ -1,0 +1,153 @@
+/* globals */
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
+@import url(prefixes.css);
+/* Top portion */
+.top button.clear {
+  float: left;
+}
+
+/* Inset shadow on the screen to create indent */
+.top .screen {
+  height: 70px;
+  width: 360px;
+  float: right;
+  /*Screen padding*/
+  padding: 5px;
+  background: #4d5c3d;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 2px 5px rgba(0, 0, 0, 0.8);
+  /* Typography */
+  font-size: 55px;
+  line-height: 70px;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+/*calculator*/
+#calculator {
+  border-style: inset;
+  border-color: gray;
+  border-width: 1px;
+  width: 500px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  border-radius: 8px;
+  background-size: 5px;
+  box-shadow: inset #262626 0 0px 0px 3px, inset rgba(38, 38, 38, 0.8) 0 -1px 5px 4px, inset rgba(0, 0, 0, 0.25) 0 -1px 0px 7px, inset rgba(255, 255, 255, 0.7) 0 2px 1px 10px, rgba(0, 0, 0, 0.15) 0 -2px 3px 3px, rgba(26, 26, 26, 0.5) 0 3px 3px 3px;
+  /* outer HL */
+}
+
+/*calculator frame*/
+.frame {
+  color: #333333;
+  transition: background-color 2s ease, box-shadow 2s ease;
+}
+
+.glider {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.floater {
+  width: 300px;
+  margin: 2ch;
+  padding: 2ch;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 2s ease;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+html {
+  font: 62.5%/1 "Droid Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
+  background-image: url(https://2.bp.blogspot.com/_7z9iqYs0SgY/TKyJmNaAb2I/AAAAAAAAFuY/jTM5iJWwMK8/s1600/Concrete+Wall+2.png);
+  background-size: 5px;
+}
+
+button {
+  border: none;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Metal ------------------------- */
+.metal {
+  position: relative;
+  margin: 40px auto;
+  outline: none;
+  font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  /*this gets the numbers color*/
+  color: #333333;
+  text-shadow: rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px;
+  background-color: #e6e6e6;
+  box-shadow: inset #262626 0 0px 0px 2px, inset rgba(38, 38, 38, 0.8) 0 -1px 5px 4px, inset rgba(0, 0, 0, 0.25) 0 -1px 0px 7px, inset rgba(255, 255, 255, 0.7) 0 2px 1px 7px, rgba(0, 0, 0, 0.15) 0 -5px 6px 4px, rgba(255, 255, 255, 0.5) 0 5px 6px 4px;
+  /* outer HL */
+  transition: color 1, 5s;
+}
+
+/* Linear ------------------------- */
+.metal.linear {
+  width: 100px;
+  font-size: 4em;
+  height: 80px;
+  border-radius: 0.5em;
+  background-image: -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.1) 7.5%), -webkit-repeating-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 4%, rgba(0, 0, 0, 0.03) 4.5%), -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1.2%, rgba(255, 255, 255, 0.15) 2.2%), linear-gradient(180deg, #c7c7c7 0%, #e6e6e6 47%, #c7c7c7 53%, #b3b3b3 100%);
+}
+
+/* Oval ------------------------- */
+.metal.linear.oval {
+  margin-top: 100px;
+  width: 70px;
+  height: 60px;
+  line-height: 60px !important;
+  border-radius: 50%;
+  font: italic bold 3em/50px Georgia, "Times New Roman", Times, serif;
+}
+
+/* active ------------------------- */
+.metal:active {
+  color: white;
+  text-shadow: rgba(0, 51, 102, 0.3) 0 -1px 0, #b3d9ff 0 2px 1px, #99ddff 0 0 5px, rgba(0, 128, 255, 0.6) 0 0 20px;
+  box-shadow: inset #004d99 0 0px 0px 4px, inset rgba(0, 38, 77, 0.4) 0 -1px 5px 4px, inset rgba(0, 51, 102, 0.25) 0 -1px 0px 7px, inset rgba(255, 255, 255, 0.7) 0 2px 1px 7px, rgba(128, 191, 255, 0.8) 0 0px 3px 2px, rgba(51, 102, 153, 0.25) 0 -5px 6px 4px, #e8f2fc 0 5px 6px 4px;
+  /* outer HL */
+}
+
+/* Clear floats */
+.keys {
+  overflow: hidden;
+}
+
+.keys button, .top button {
+  float: left;
+  width: 66px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 10px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Remove right margins from operator keys */
+.keys button.operator {
+  margin-right: 1;
+}
+
+p {
+  font-size: 13px;
+}
